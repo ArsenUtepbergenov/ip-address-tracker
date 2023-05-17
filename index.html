@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>IP address tracker</title>
+    <link href="./styles.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <h4 class="h">IP Address Tracker</h4>
+        <form action="" class="form">
+          <input
+            type="text"
+            class="ip-input"
+            autocomplete="on"
+            placeholder="Search for any IP address or domain"
+            required
+          />
+          <button type="submit" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+              <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
+            </svg>
+          </button>
+        </form>
+      </nav>
+      <section id="info" class="info">
+        <div class="info-field">
+          <small class="info-prefix">IP address</small>
+          <p class="info-data" data-info="ip"></p>
+        </div>
+        <div class="info-field">
+          <small class="info-prefix">Location</small>
+          <p class="info-data" data-info="location"></p>
+        </div>
+        <div class="info-field">
+          <small class="info-prefix">Timezone</small>
+          <p class="info-data" data-info="timezone">UTC</p>
+        </div>
+        <div class="info-field">
+          <small class="info-prefix">ISP</small>
+          <p class="info-data" data-info="isp"></p>
+        </div>
+      </section>
+    </header>
+    <main class="map">map</main>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
